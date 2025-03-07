@@ -3,9 +3,9 @@ window.onload=async ()=>{
     //console.log(response);
     let productList=response.data;
     let productListDiv=``;
-    productList.array.forEach(item => {
+    productList.forEach(item => {
         productListDiv += `<div class="card m-3" style="width: 10rem;">
-        <img src="img/${item.pimg}.png" class="card-img-top" alt="...">
+        <img src="img/${item.pimg}" class="card-img-top" alt="...">
         <div class="card-body">
           <b class="card-title">${item.prodname}</b>
           <p class="card-text text-danger">${item.price}</p>
